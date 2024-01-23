@@ -31,7 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  max-width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -39,6 +39,7 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .item {
@@ -56,6 +57,19 @@ header {
   background-color: #ff385c;
   padding: 20px 20px 0 20px;
   text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+header nav ul li:last-child a {
+  margin-right: 0;
 }
 
 .logo {
@@ -83,11 +97,20 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
 }
 
 form label {
   font-weight: bold;
-}
+  margin-left: 10px;
+} 
 
 form select,
 form input {
@@ -117,3 +140,18 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+/* Desktop Styles for Nav */
+@media all and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+  header nav {
+    margin-top: 8px;
+  }
+}
