@@ -152,7 +152,6 @@ footer p {
   header nav {
     margin-top: 8px;
   }
-
 /* Desktop Styles for Form */
   form {
     display: flex;
@@ -164,7 +163,6 @@ footer p {
     flex-direction: column;
     margin: 10px;
   }
-
 /* Desktop Styles for About */
   #about .group {
     flex-direction: row;
